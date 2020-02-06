@@ -1,0 +1,40 @@
+project management
+
+escollir un webserver local i documentar-ho
+sublime per edicio
+bootstrap
+seamonkey wysiwyg mozilla
+markdown for readmes
+
+fabdoc: to do markdown page. like a diary with pictures and texts from the phone
+gitbook
+NO wordpress
+
+pick one template from past years and update
+
+simplescreenrecorder for live capture and documentation
+
+
+project management
+triage: chose what you need to do and what to leave behind
+demand vs supply: supply, calcules el temps abans de comencar a currar i llavors esculls que pots fer
+spiral development: work incrementaly with deliverables, looping over a complete version, adding features
+work on smaller parts that can be debugged separately
+document as you work
+
+class archive link opens more content
+investigar gitlab issues, lists, boards, milestones
+
+windows subsystem for linux?
+
+els nostres repos no poden passar de 100mb al final de tot
+comprimir i resize imatges. GIMP6
+
+ffmpeg to compress videos
+
+git revert - undo commit
+
+enviar foto per la pagina principal i link a la pagina
+
+crear un sketchfab account pels fitxers stl
+lo unic que pot estar fora del repo son grans fitxers stl

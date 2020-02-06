@@ -1,0 +1,36 @@
+CAD 01
+
+- assignments de barcelona, anar a labs - barcelona - docs i anar a la setmana
+- 2d: vector: Svg, dxf raster: png, tiff
+- 3d: obj, stl
+- nurbs modelling preferred when possible
+- when cutting with a laser cutter we have to account for Kerf, the width of the laser cut. we need to take this into account in the design
+
+rhino/grasshopper
+
+- grasshopper defines and rhino renders
+- ex: point - right click - set point you can click it on rhino to choose the coord
+- work with millimeters units (bottom
+- slider from 25 to 150, default value 75: 25<75<150
+- in rhino, nurbs are breps
+- right click reparametroze
+- exemple 4: treiem les surfaces, comparem pillem les normals, comparem amb z, descartem les que toquen
+- per tractar una cosa de rhino a grasshoper. tenirlo a rhino, posar un modul a gh, clic dreta i set i ja ho tens.
+
+fusion 360
+- cad, cam, cae - can produce the files for most of the machines
+- machines at fablab are set for rhinocam. but we can try fusion.
+- provar generative design per fer els links de la cadena?
+- slicer for fusion360  - prepara les peces per ser tallades
+- blau es pot moure, negre esta fixe.
+- mirar constraints
+- sketch modify paremeters
+- >>> tornar a fer lexemple de fusion parametric
+- per tallar amb laser: crear un nou sketch a partir de la cara de lextruit i apretar P (project).
+if we then hide the body, we should only see the lines that we want. then save as laser DXF which we can then import anywhere
+- difference between body and component: Many componentsts inside a body. if we select the component, the history is only about the component.
+body affects everything
+- mirar joints per ajuntar cares pex
+
+freecad
+- no te history

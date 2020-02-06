@@ -1,0 +1,41 @@
+COMPUTER AIDED DESIGN
+
+calendari nostre a la web del lab barcelona.
+thursday classes on 301
+
+Weekly review
+----------------
+
+- Vortex tube: Compressed air in, hot air out on one side, cold air out on the other. Energy inefficient
+- 3d scanning sometimes works by projecting lines and analyzing the curvatures.
+- For the final project, look at what other groups have done and try to make something not worse than them.
+
+Recitation
+--------------
+
+- Assignment: Model something - ideally the final project. Try different softwares. Browse through final projects. Make one of each designs - Use Unity ?
+	- Produce audio and video, and embed on the website (the animations and physics)
+	- Next week design has to be parametric, so try to do something with it this week.
+	- Show that you understood the difference between raster and vector. one design of each
+- freecad - constraint solver - keep constraints as you design
+- declarative design: you say what you want to do and the tool helps you
+- blender: modes - workbenches, like clay sculpt
+- solidworks - estefa - constraint solving
+- >>> freecad - opensource
+	- fillet and chamfer : rounds the edges and facets them
+	- cloning important, com prefabs perque es propaguin els canvis
+	- treballar amb constraints sempre que sigui possible, per cares que es toquin, distancies etc... aixi les coses s'adapten soles
+	- unfolding, create the 2 flat surface out of the 3d object
+	- parametric design: pull numbers from a spreadsheet, so that the parameter propagates to the design
+	- Turn it into a drawing format for display
+	- doesn;t have its own renderer
+- >>> Investigar blender constraint solving
+- fabconnect solidworks - solidworks talks to the machine building software directly
+- "You could do the whole class with Unity"
+- Blender physics simulation. Fusion too
+
+- ffmpeg to compress videos
+- vokoscreen Ng to capture live windows screen
+- no animated gifs unless absolutely necessary - use html5 video
+- Trace path, trace bitmap to go from raster to vector
+- Image editing: GIMP or Krita
