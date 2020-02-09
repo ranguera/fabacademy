@@ -1,0 +1,44 @@
+CAD
+
+Blender
+
+https://hackmd.io/ojtXMAVIQYyJJ86pPzzNpA?both
+
+- GPL: Once its yours, you can do with it whatever you want.
+- idea: if you use someone's work, you should share your work
+- Not CAD. You can use it, but it is not stricly prepared.
+- Pretty good for 3D printing with specific tools.
+- blendernation.com
+- there's a good sculpting interface - better with a tablet with a pressure sensitive pen
+- excellent vfx module
+- T toggles tools vis
+- N: property window
+- TAB: edit to object mode
+- F3 : search window
+- scenes groups stuff. can have many scenes on one file
+- image editor and uv editor
+- shader editor graph based
+- has a very good video editor like premiere
+- preferences - addons. ex: 3d print
+- preferences system - gpu renderer
+- h hidea objects. also on right bar
+- / on numpad, focus on object, com la F a unity
+- g: grab and move. 
+- YOU DONT CLICK AND DRAG. YOU TOGGLE
+- g + x: grab and move only x
+- g shift z, everything eexcept z
+- g + x + number, move by that num
+- ctrl - A: Apply the transform, so the object becomes like that from the root, and not a transformation of scales and rotations.
+- selection: b box, c circle. a: all. alt-a none.
+- ALT = negative
+- EDIT mode: 1,2,3. you can shift to select more than one
+- z: context menu: shaded/wire etc... works as gesture too. hold z and swipe right and release z
+- modifiers: like nodes, where an output can go to anothers input
+- modfy - array. offset, or object based offset - if based on object, we then apply the transformations of the root object to the array production.
+- solidify = extrude
+- ctrl while moving etc.. SNAP
+- el menu de snap (dreta de iman) pots seleccionar quines coses fer snap
+- while moving rotationg etc.. ctrl snaps amounts, shift slows down (precision)
+- empty objects can be used as parametric parameters
+edit mode - right cilck - subdivive
+- sverkchov addon - procedural meshes
