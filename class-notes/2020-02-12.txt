@@ -1,0 +1,64 @@
+CUTTING
+
+- Si fem una cosa una setmana que repercuteix en la idea, podem editar la setmana 1 i afegir un link a l'assignment perque es vegi.
+- Afegir referencies passades a la pagina principal
+- handbreak.fr per comprimir videos
+
+CLASS
+
+- exactflat 3d to cuttable 2d
+- mods: interface to talk to all machines
+- kerf: offset by the tool diameter
+- mods on github: community edition - better interface
+
+VINYL CUTTER
+
+- vinyil cutter: thermal transfers - thsirts (heat + squish) / origami
+- materials
+	- copper foil tape
+	- epoxy film eletrical tape
+	- double coated adhesive transfer tape
+- too much force shreds the material. small force doesnt cut
+- do a short press cut to test
+- shear, not pulling up
+
+LASER CUTTER
+- check types of joints on class doc
+- chamfer: good for cardboard
+- pinned: strongest holding force
+- finger: easy, holding force friction
+- wedge: stronges right angle, com un baldo
+- hole must be less than =- .005" inches
+- recommended: makes a series of slots each slightly bigger to find the right cutout
+- most common: CO2
+- air flow through the nozzle, exhaust through the bed
+- laser cutters want to ignite.
+- si comenca a cremar, obre la tapa i el laser es para. pero si hi ha molt foc lalimentes amb oxigen. llavors posar manta
+- si el cartro es doblega es que es heavy duty. si es parteix en angle recte no
+- cardboard to prototype
+- despres de tallar, deixar la tapa tancara una mica pq sacabi de ventilar
+- acrylic - pots fondre materials i escalfarlo per doblegarlo
+- when making joints with acrylic, chamfer them to make them more resistant. angles rectes es volen trencar
+- PVC is nasty - releases chlorine and etches the laser. if you burn the material and you see color, don;t put it in the laser
+- high rate: smooth cutting, but materials that melt or burn bad.
+
+
+
+
+
+
+
+ASSIGNMENT:
+- group
+	- no need to write personal doc, but do it as a group and link to it, explaining what you learned
+	- make charts of sweeps of the parameters. power, speed
+	- measure the kerf on our cutter
+- ind.
+	- parametric to accoutn for the kerf
+	- CAD: offset com shrinking pel parametre aquest
+	-  make it bend. look at example on class page - living hinges
+	- provar joints que no siguin la tipica
+	
+	
+	
+	
