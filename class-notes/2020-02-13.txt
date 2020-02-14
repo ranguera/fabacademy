@@ -1,0 +1,56 @@
+Computer controlled cutting
+-----------------------------
+
+Additive - 3d printing. layer by layer - usually not as strong os substractive
+substractive - cutting
+
+- usually 0.2mm beam at the surface after concetration by the lens. from the focus point on, the laser diverges
+- with thin materials, like 1mm, you focus on the surface
+- with more concave lenses, you need more spce for the focus point, but you also have less divergence after it.
+- lenses are about 500euros
+- for paper folding, instead of designing a dash line, you create a full line and set it to a slow freq so it just creates dots
+- air prevents smoke to come up, bc the laser doesnt push anything out, its just air
+- fiber laser cutters: with fiber optics
+
+- unfolding 3d: for instance with grasshopper
+
+- nesting: put everything together to reduce waste
+	IMPORTANT:  order the vectors by proximity of start and end points
+	sw usually has an ordering of the layers: deepnest, svgnest, opennest
+	for cardboard: distance between lines 3 to 5
+	
+size of the beam usually .15. size of the cut usualy .25. if you cut a 100mm square, the piece will be 99.5mm
+- materials have different compressibility, so press fits are more or less tolerable. cardboard will bend, metal wont
+- kerfing: using single lines to carve a line to make bending surfaces, as opposed to drawing both ends of the cut
+- waffle: sturdy pieces, furniture
+- tessellating. cutting planar while preditcing how it will bend and bending
+
+-vector or raster
+1-1 scale in mm
+
+1) draw cutting area
+2) draw material size
+3) design inside
+
+- use basic rgb colors rgb ymck
+
+export dxf 2004
+
+make sure your design is flat from the top
+if there are two lines on top of each other therell be two passes, making the cut wider.
+- rhinocam has the command seldup to pick the duplicate lines
+
+the order of the layers of cutting on the interface (colors)also matters. cutting inner parts first is recommended, if you cut outer ones, the inner part might move
+if plastics have chlorine, dont cut
+
+make sure smoke extraction and air compressor are on
+you can cut pasta
+
+flatfab - structural testing to know where things will break
+- makercase: will build the press fit joints
+laser origami videos: uses defocusing to bend plastic via gravity
+
+pepakura: unfolding for a lot of things
+
+how to laser cut like a boss: snaps, kerfing, joints, living hinges... lasercutlikeaboss.weebly
+when there are points with lots of stress, adding up a curve relieves tension. so instead of 90deg, you have  curvature
