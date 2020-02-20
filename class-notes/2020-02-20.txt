@@ -1,0 +1,47 @@
+ELECTRONICS PRODUCTION
+-----------------------
+
+- buy a short usb adapter
+- check with voltimeter if there are shorts before plugging it in. We can damage the laptop
+- we'll build a tool to connect our laptop with the chips we'll use they all have different ways to talk
+- FTDI: convert usb to serial communication
+- esp32: good chip with ble wifi and many capabilities
+- boot loader: when you first power the device, talks to whatever its giving power. some chips dont have boot loaders. runs only once when its powered
+- it really matters where in the memory you write to 
+- the arduino has both the ftdi and the microcontroller on the same board
+- if we have a microcontroller that works at 3.3v we cant forward the 5v from the laptop. behind the ftdi cable there's info
+- microcontrollers have memory ram, rom etc.. microprocessors only process
+- take paper and celo and stick the components on the paper with names
+- if we burn th board, try to fix it with cables or copper etc..
+- small components first
+- some components have certain orientations within the board
+- be careful with the microcontroller - look for the notch or a mark to indicate the orientation, usually for vcc. leds also have a small line for cathode
+- goal: to have no wires
+- you cut out copper, so you isolate pieces of copper from one another. you can cut completely to leave only copper lines, but it takes much longer. it also does not allow you to make corrections.
+- fab mods:
+	- input image
+	- output - roland mill
+	- process: PCB traces 1/64
+	- menu pops up
+	- machine: mdx-20 or srm-20
+	- origin
+	- home - usually dont touch
+	- speed params: if you cut too fast you break the end drill
+		- 3mm/s
+		- outline traces: 0.5 because we need to cut the whole material
+	- we use the 1/64 bc the 1/32 cant fit in the space between microcontroller pins.
+	- but for outer parts, we want bigger lines to make it easier to solder. its called offsets. ex: 4
+	- cut depth: material that we remove. 0.1
+	- zjog: how high up the head will go when travelling
+	- direction: FTDI: conventional. for the rest: climb
+	
+- use good quality double side duct tape
+- dont overlap double side tapes
+- to take out the pcb from the board, use a cutter knife
+
+soldering
+- flux helps solder attach only to the copper parts. not healthy. not recommended
+- when soldering attach the pcb to the table with the pad or clamps
+- dont let the soldering iron on
+- do not apply pressure. be soft
+- original from neail recommended - link on neils lesson

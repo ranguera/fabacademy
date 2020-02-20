@@ -1,0 +1,44 @@
+COMPUTER CONTROLLED CUTTING REVIEW
+-------------------------------------
+
+- a good step when cutting different joints is .1mm
+- press joints work better with chamfers
+
+
+
+ELECTRONICS PRODUCTION
+------------------------
+
+- Etching: etch away the copper
+- Very polluting
+- we'll make the boards by machining - no checmical waste.
+-
+- do not overtighten the set screw.
+- climb vs conventional. TEST
+- vinyl cutter: you can cut the circuit and then transfer to the medium. Mirar video a la lesson
+- you can also laser cut the board with a fiber laser
+- sewing machines using conductive thread
+- 
+- to create layers, you can add epoxy on top of one and lay out another circuit, connected by vias
+- on our boards, we'll dig holes and put rivets
+- octopart.com to look for parts
+- chip leads dont go under the layer anymore, they spread on top of it
+- solders hasve to be shiniy and smooth
+- soldador primet i net: posar fil i netejarho amb una esponja
+	- posar soldador
+	deixarho un rato
+	posar material
+	deixarho un rato
+	treure material
+	deixarho un rato
+	treure soldador
+	
+- with flux we can spread the solder over very close pins
+- desoldering:
+	- braid: posa-lo sobre la soldadura, acostar el soldador, escalfar i hauria de tirar cap amunt del fil.
+	- GRAVITY w/ hot air gun
+	
+- encapsulation: sprays, glues.. make it robust against the environment
+- line test pattern on the lesson link. bottom
+- look at students examples under isp. if making a usb, use a usb extender to plug it into the pc
+- assignment: we can choose isp, updi, or arm parts JTAG ? (Free-DAP))

@@ -1,0 +1,25 @@
+documentacio
+
+descarregar imatges de la documentacio
+obrir mods i carregar imatge
+afegir modul de save
+borrar el que hi havia
+calculate i guardar fitxer.
+
+si tallem mes d'un modul, tornar a guardar el fitxer amb les coordenades que toquin.
+
+maquina. engegar
+posar el drill
+moure a l'origen x,y i cliar origin xy
+moure cap avall i quan estigui aprop descargolar i deixar caure a poc a poc
+cargolar un altre cop. marcar com a origin Z
+
+carregar els fitxers i clicar output.
+
+hem fallat i no tallava prou.
+
+hem tornat a lorigen.
+hem engegat el drill i hem baixat a poc a poc fins a veure que foradava una mica 
+hem tornat a setejar lorigin a Z
+
+hem tornat a clicar output i basicament ha resseguit el que haviem fet i ha comencat a fer els nous.
