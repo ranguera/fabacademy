@@ -1,0 +1,17 @@
+
+- Microcontrollers: 2 main brands: microchip (AVR (ATMega - arduino)/ARM - bigger), espressif
+- attiny and atmega: isp
+- attiny series 1: ftdi
+- ISP will be obsolete
+- 
+- we program the boards with pyupdi
+
+- 2 steps like arduino: compile and flash
+- from the arduino ide you compile for attiny whatever. you can compile but not flash. find the compiled file in the folder on the console. find the hex file.
+- python pyupdi.py -h for help
+- python pyupdi -d [device] -c [port] -b [bauds] -f [file] -v (verbose)
+- if it doesnt work, reduce bauds to 9600
+- arduino zero has an arm chip
+- arm can be compiled and flashed from the arduino ide. board: generic d11d
+- jtag preferred over swd
+- Tools: programmer: Jlink over blahblah

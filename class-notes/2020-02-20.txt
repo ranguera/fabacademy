@@ -45,3 +45,137 @@ soldering
 - dont let the soldering iron on
 - do not apply pressure. be soft
 - original from neail recommended - link on neils lesson
+
+-- Demos practiques
+
+Màquina gran
+
+Nroute - dxf to gcode
+Mirar q totes les barres estiguin al mateix nivell
+Shift-go home X alinear lo primer
+Seguir la 1a columna de dalt a baix
+2) set surface
+3) jog speed x com es mou de rapid
+4) fer el Focus sobre una barra
+5) moure el sensor amb les dos fletxes superiors, quan estàs aprop apretar i mantenir 0
+6) set material home. Posa el head Al principi del material i clicar
+7) material library - select type - plywood.
+8) mode cut 1, engrave 2, raster 3
+9) cut pressure 2 or 3 per tirar aire
+10) girar les claus
+11) start action
+12) alnum 9 hi ha historia de homes
+13) nroute al PC X passar línies a gcode
+14) new - posar mida
+15) import
+16) nroute: Ctrl 1 mou a la cantonads
+17) transform.merge selection
+18) seleccionar icona engrave I escollir strategy 
+19) output options export
+20) seleccionar ordre
+21) crear folder dins de laser
+22) save as cnc
+23) machine tools icons baix dreta. El server ha d'estar connectat
+24) última icona ¹a columna per començar, i set home
+25) al PC sobre el job console
+
+
+
+Vinyl cutter
+
+1) vinils a ledtanteria de la cantonada
+2) turn on
+3) lever
+4) put paper down
+5) lever up
+6) les rodetes sempre sota les línies blanques. Moure les per darrera
+7) una sempre a la cantonada
+8) calibrar l'alçada del ganivet: casi no visible. Provar-ho pla sobre el paper i sense apretar molt fer una línia q no talli del tot
+9) seleccionar roll piece o edge. Piece és com una fulla de paper.
+10) width es des dels insides de les rodes
+11) menu velocitat i força. Menú setup i canviar amb les fletxes.
+12) you have to press and hold the buttons
+13) press test. Don't cut the paper. Peel out without taking out the square
+14) file cutting setup
+15) choose machine
+16) properties. Get from machine
+17) illustrator save as version 8
+18) file cutting
+19) per coses intrincades s'enganxa cinta de pintor i es treu. I després s'enganxa la cinta de pintor i es pela en 180 graus no 90
+20) per desmontar menú menú i unsetup.
+
+
+Peque
+
+1) switch on the back
+2) peça per fet el focus a la caixa de sobre
+3) posar-la al costat a lescaketa
+4) moure a poc a poc fins q cau
+5) si està corba, posar-ho concau
+6) fer servir tapes X enganxar la fusta al bed
+7) start rhino
+8) file print
+9) lo blanc és la superfície de la.maquina
+10) a rhino apretar move I moure l'àrea X alinear
+11) scale 1-1
+12) output type raster o vector
+13) properties - minimize design exports només el dibuix, no tot el bed
+14) print
+15) boto I'll preview
+16) settings material settings
+17) cut and engrave on every color
+18) raster es engrave
+19) no of passes x si volem retallar X si no arriba
+20) ready button
+q21) el curso Blau es el pointer
+22) tallar sempre la últims operació i tallar coses interiors abans
+23) quan fem raster output la resta s'amaga i es fa després.
+24) raster only sees black and white.
+25) rhino show mostra les capes amagades
+26) rhino hatch omple les lletres O formes
+27) engrave amb vector es fa com A cut molt qQAràpid
+28) Black part will still show when doing vector
+
+Soldering
+Silicona mat
+Solder suckers
+Multimeter
+Ulleres magnificades?
+Copper braid
+Fine tweezers
+Obrir la tapa pausa la mawuina
+El connector ha d'estar net. Sense línies pel voltant
+Finer lines with conventional mode
+Thicker with climb
+Començar X una pota del cantonada
+Quan s'uneixen dos, a vegades escalfant i movent se'n va
+Animal way: totes les potes i després neteges
+Per les resistències i altres, posar uns bombolla i després reescalfar i posar el chip
+Netejar el coure amb alcohol abans
+Assegurar-se que les soldadures són brillants. És la temperatura del soldador q ho fa
+Al final de tot, comprovar totes les continuitats
+
+Multimetre - tenir en compte els rangs dampers.
+
+Mods
+Al fitxer imatge lo negre es talla. 1000 dpi
+Check the size
+Add module that saves your file
+Click calculate to compute and save
+
+
+Machines
+Place pcb near the edge
+Deixar el tap blau mentre cargolem
+Posar a una cantonada i calibrar xy
+Acostar el drill a la placa, descargar mentre aguantes. Deixar caure a poc a pic i quan toqui cargolar un altre cop.
+Engegar motor
+Mirar si treu pols
+Si no, pujar la z molt poc
+I quan vagi, calibrar z
+
+File: Always copy from usb to pc
+
+Maquina de la dreta,  velocitat 70%
+
+Hem de veure pols rosa
