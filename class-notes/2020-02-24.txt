@@ -1,0 +1,36 @@
+ROBOTS
+--------
+
+Fabrication strategies wtih 6 axis robotics
+
+- You can put anythingi in the robot arm. we just learn to move it on 6 axis
+- x,y,z and the normal of the plane
+- parameters:
+	- speed
+	- approximation: Espai al voltant de la target que es acceptable com a desti. no cal que sigui precis. Es pot utilitzar per fer interpolacions, afegint punts intermitjos
+	- inputs/outputs: extra conditions to activate. for instance a vision camera. Kuka has 24 inputs and outputs
+	
+- In robots, We don't have points in space, we have planes in space
+- We have to work with kinematics. everything is a rotation in the end. This process is transparent though
+- 3 coord systems: World, robot and tool. Every movement of the tool needs to be based on the plane of the tool. The tool can have different orientations.
+- when you set a position in space, the tool should reach not only that position but the orientation as well
+- Different movements of the robot arm: PTP interpolatino, arc interpolation, linear. It will always try to move with the least amount of rotations.
+- Types of activities: carving, picking and placing, carving, dripping, 3dprinting...
+- we will use AAB 120 and 140 robot.
+- only with grasshopper and windows. a plugin called ROBOTS. exports to kuka, aab etc... We will also use Kuka PRC for kuka
+- new robots are smarter and are aware of their surroundings, you can set up positions by moving it manually..
+- 
+- instal.lar https://github.com/visose/Robots/wiki , seguint instrucctions de la pagina sobre grasshopper i sortira un nou tab q es diu robots. 
+- grasshopper create robot, kinematics and tool
+- when creating a tool, it needs to sit at 0,0,0 on rhino bc that will be the coord on the hand of the robot
+- singularity: When two axis are aligned, to get to another point it has to untwine. To do so it would need to de-rotate one of them faster than the other, so it slows down everything
+- we never want to 3d print for instance in front of the robot, better 45 degrees from it to prevent singularities
+
+- when designing a curve movement, we need to turn the curve to a polyline
+- explode the poliline to get the list of points. but do so with a minimum acceptable so that the simulation doesnt take too long.
+- now for every point we need the planes. Depending on the orientation of the planes, the robot wont be able to do it, it will hit rotation limits.
+- we can rotate the list of planes to ease this if it works for our job
+- The rotation of planes will change the rotation of the head, regardles if the plane is still rotated on the same axis
+- all the files are on the web page
+- with the robot we can tilt the head so that we can easily print curved surfaces
+- 
