@@ -1,0 +1,5 @@
+- rhino seleccionar tot i comanda JOIN
+- print > set - clicar move a dalt a comandes, moure l'inici del bed on vulguis i clicar enter
+- despres ja pots imprimir i sortira al software de la trotec
+- un cop has fet aixo l'ull et deixa fer un preview
+- des del rhino comanda make2d. i canviar els colors
