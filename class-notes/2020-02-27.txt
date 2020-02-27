@@ -1,0 +1,88 @@
+3D PRinting
+
+- bigger than 45 deg angles require support - more material, more time
+- think about layers. tension through layers is weak, tension across layers is good
+- depending on the material, remote extruder or direct extruder is preferred- 
+- make sure the model is water tight, a closed mesh
+- no crossing meshes
+- if we have different objects, put them on different files and let the slicer arrange
+- minimum size 0.5mm or the slicer wont take it
+- rhino will tell you if a mesh is open or not
+- meshmixer - meshlab to close open meshes
+- in layers you can go as low as 0.1mm, so you can build more details on height than on the x,z plane
+- zbrush can slice and close meshes
+- 3df zephyr - up to 50 pictures workflow, new project, computer everything nxt. add pictures. tb pots posar un video.
+
+3d printing:
+
+Makerbot per experimentar
+
+Reprap 3 X fixes, les altres 2 per flexibles
+
+Cartesian- each axis moved by 1 motor
+
+Delta printers 3 motors to move the head
+
+La blanca de resina té una pantalla UV q fixa després de cada capa amb la imatge 2d del model
+
+1) choose printer
+2) ultimaker is clogged
+3) drag a file
+4) see red parts - need supports
+5) layer height - thickness. .2 standard
+6) initial later height - first layer can be thicker to support
+7) line width - noodle diameter
+8) diameter width standard here .4 or .6
+9) depending on the material might be a different bigger noodle
+10) shell
+11) preview shows the inside
+12) wall line count multiple of line width. It's the wall thickness
+13) bottom layers - how many of the button layers we want
+14) same with top
+15) infill
+16) infill density. Around 20-30%
+17) choose pattern
+18) material
+19) need to know what we'll use
+20) temperatures are usually on the roll
+21) plate temperature fine out
+22) check the material always on the roll
+23) retraction distance - depends on the extruder - to prevent doing when moving from piece to piece
+24) Bowden bigger retractions. Direct tiny
+25) speed
+26) keep standard. But change depending the material
+27) Tavel
+28) you can set so it didn't travel on to of pieces and didn't heat them up
+29) cooling - start after bottom layer
+30) let it enabled and don't touch
+31) support
+32) generate - auto
+33) preview will show
+34) support overhang angle - you can change when support is laid out
+35) can choose support pattern
+36) z distance. From the support to the print. Leave same as layer height
+37) xy distance 1-1.5 to leave space between support and print.
+38) build plate adhesion
+39) raft - to create the base
+40) brim - only on the sides - better
+41) skirt - doesn't change the model. Only a contour around to hear up and prepare
+42) mesh fixes might help with open models and removing holes
+43) special modes 
+44) spiralize outer contour Crea una espiral sense capes reals. Only one line
+45) amb les pinces sobre el motor i posen estirat el material. Però abans hem d'escalfarla màquina pq està fos i enganxat a dinsabans d'estirar, apreten una mica per deixar caure la resta
+46)tallem la punta del fil 45 graus pq sigui més fàcil
+
+Quan el poses l'has de veure a través del tub i fins q no pots més.
+
+On glass we put laca carefully
+
+Home the machine to make sure it's chutney is at 00
+
+
+Photogrammetry
+
+Autodesk
+Zephyr
+Alice vision
+Recap
+
