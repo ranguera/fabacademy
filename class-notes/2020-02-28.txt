@@ -1,0 +1,56 @@
+3D SCANNING - 2
+----------------
+
+fotogrametria aerea
+- Datos EXIF - metadatos de las imagenes:
+- com mes millor, angle de lent, camera, sensor.. en cas dels drons, gps, posicio inercial etc...
+- treure deformacio, adaptar la posicio i colocacio segons els metadatos
+- totes les imatges han destar totalment enfocades. F 8-11
+- molta superposicio, com a minim 30%, recomanat al 60%
+- els drons per la maxima precisio de gps es connecten fins a 16 satellits per triangular
+- amb preses amb molt detall necessites molts angles.
+- si volem fer un objecte 360 podem o penjarlo de laire, o girarlo i el sw ho pilla les imatges del reves
+- 
+
+SW
+
+- meshroom: opensource, nice interface
+	- you can live add more pictres while reconstructing if you see one area is not clear enough.
+	- it tells you if images are valid or not using exif data
+	- order of the pictures doesnt matter
+	
+first step is getting a point cloud reconstruction
+- then you get a dense reconstruction
+uses GPU
+
+pro photogrammetry is usually mixed with lidar
+lidars: .5M points/sec
+
+for forests, lidar can see through vegetation
+
+pictures are better than videos bc they have metadata
+
+meshroom graph editor: you can parametrize each step
+
+
+- autodesk recap photo
+
+different from autodesk recap !!
+
+- recap photo is the sw to reconstruct from photogrammetry
+- up to 150 images
+- fast, cloud based
+
+
+agisoft photoscan
+
+-5K but really good
+
+point clouds saves as PTS
+
+Multispectral cameras: pack of cameras with different filters
+
+
+
+- Reduce the amount of data: sky is useless because it will not interpolate. preprocess images to remove. Same with sea
+
