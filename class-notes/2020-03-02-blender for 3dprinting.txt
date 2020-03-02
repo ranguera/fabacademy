@@ -1,0 +1,183 @@
+BLENDER
+
+- unit scale and unit selection on scene panel
+- measuring tool
+- menus de dalt a la dreta et permeten mesurar tambe - recorda estar en edge mode
+
+- com treballar amb meshes grans
+- bit.ly/32Eo5Cy
+
+1st step to clean:
+- remove duplicated vertices
+- edit mode - alt M in object mode
+- decimate - collapse - ratio: % to keep
+- 
+
+- how to make a flat surface on the bottom
+boolean - enable addon. edit preferences bool tool - adds shortcuts
+- wuan selecciones varis objectes, lutim es l'actiu
+- ctrl - del numpad
+
+per omplir un forat de sota:
+
+A selecciona tots els vertex, alt a deselecciona
+B for box seleccion. C for circle selection - mouse wheel scales brush, left cick to paint, right to unpaint.
+Seleccionem tots els del forat
+varies opcions, moursels tots, mourels tots i fer un boolean un altre cop... scale Z 0 per posarlos tots a 0, i despres mourels tots al nivell de la base.
+Si borrem tots els vertexs queda buit per sota, anem a unir la mesh.
+
+Alt click selecciona tots els vertex de lexterior. alt F omplira una cara entre tots els vertexs seleccionats amb triangles. F crearia un ngon gran, pero no va tant be
+
+
+sculpting va molt be per ajustar models escanejats. per sculpt millor tenir bona resolucio
+si no la tenim podem fer remesh: modifier: subdivisino surface
+sculpt mode, draw i a dalt a la dreta surt un menu - remesh
+la idea es fer un cicle remesh - decimate - remesh per tenir detall on volem i menys on no
+
+sculpt tools:
+click activa, shift click smooth brush, ctrl is opposite
+right click changes properties
+f and shift f change strenght and size
+
+0 flatten: ojo que per defecte tenim mirror activat a dalt a la dreta i afectarem les dues bandes.
+pinch you can add more detail
+
+when you pull and push you loose detail but you can remesh again. it will not create more detail in other parts, it will just make all faces homogeneous
+
+
+how to do lowpoly
+decimate
+
+dont abuse resolution, the small printed models will not have all the detail
+
+how to fix holes
+
+- addons print - 3d print toolbox
+
+then N shows 3d print on the right sidebar menu
+
+check - solid: tells you vertices that are not connected
+in edit mode, theres a button on the results, and alt f fills
+then we can remesh and smooth with sculpt and decimate again
+
+
+
+Normals pointing inwards - it can confuse the slicer
+
+3d printing toolbox should detect some problems. - all the perimeter of the inverted faces
+it can show overhang as well
+
+select all faces and recalculate normals - takes an average of the right direction and changes the ones that are not.
+
+
+
+
+
+isolated vertices
+
+clikc P to separate objects and all of them will become separate objects
+then either select or select what you want and ctrl I to select invert
+X and delete to delete vertices
+
+
+
+0 Faces - faces that have no area
+when you click on the check analyzer it selects the faces but we dont know where it is. point on numpad focuses on it
+from the menu, View Frame Selected
+sculpt smooth should fix most of these
+
+
+
+
+non flat faces, non planar faces
+stl will automatically triangulate
+
+
+
+
+overhang faces
+you can make custom supports on blender or let the slicer do it. This way you can put them  in hidden parts and so on.
+you can also break your mesh in parts and join them later on
+
+
+
+
+sharp edges
+ smooth in sculpt or select and smooth with the smooth command
+ 
+ 
+ 
+ other ways to close a hole
+using the clean up section of the 3d printing toolbox has the option to fil with an ngon
+
+
+
+how to remove the inner part of a scanned model
+try to delete the inner faces and fill holes
+a good strategy is to hide the vertices that you want to keep 
+click H hides the selected vertices
+alt H unhides
+and the fill the hole ifn eeded
+if you select with solid you will only select the ones on the side your painting from
+XRAy on the top right menu might help as well
+
+
+
+3d print menu
+transform: can actually scale it to fit in the bounds that you tell them. better than doing it manually
+
+
+
+REMEMBER TO ALWAYS APPLY MODIFIERS BEFORE EXPORTING
+otherwise it will be exported before the modifiers
+there is a checkbox on the export menu to apply them as well
+
+
+
+when you design for 3d printing it's different than for cutting etc...
+
+http://www.instructables.com/id/3D-Design-For-3D-Printing/?ALLSTEPS
+for instance, instead of a circular hole, draw a drop-shape with 45 deg on top.
+
+
+other slicing options:
+
+Cura is based on the cura engine. Cura engine is opensource
+
+slic3r is an opensource
+prusa took it - prusaslicer - very powerful, harder to use than cura
+
+
+you can get thicker lines if you put more pressure on the plastic when it comes out. when you stick layers on top of the other they flatten.
+you have to crank up the temperature a bit
+
+
+Many common 3d printing errors: DO CHECK
+https://www.simplify3d.com/support/print-quality-troubleshooting/
+
+
+
+http://reprap.org/wiki/Print_Troubleshooting_Pictorial_Guide
+https://all3dp.com/common-3d-printing-problems-3d-printer-troubleshooting-guide/
+
+you normally have to iterate on your piece. it never comes out as the model . play with the mparameters.
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
