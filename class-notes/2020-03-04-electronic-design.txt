@@ -1,0 +1,90 @@
+ELECTRONIC DESIGN
+---------------------
+
+
+- Each wire on the rainbow wire has it's own resistance etc..
+- I = V/R
+- Resistors are used to limit current
+
+- C = Q/V
+
+- crystals and resonators: diagram is like a capacitor with a square inside.
+- we use them to do accurate timing or faster than the microchips
+
+- Inductor: like a resistance but curly
+- V = L di/dt
+- used for filtering: prevent high frquency noise from going into the circuit
+
+-diodes: like an arrow, anode to cathode following the arrow
+- schottkey diodes can be used in front of a regulator, to prevent current going out
+- Zener diode: 
+- LED: drawn like a diode with a curly arrow coming out
+- 
+
+- regulator: tune down voltage to the desired value
+- 
+
+
+ASSIGNMENT
+
+ATASAM family interacts with usb directly
+http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.echo.mp4
+
+good one to start
+mming/t1614/hello.t1614.echo.png
+
+JUST test it. send a character and get it back
+
+take a free pin, connect a button
+take another free pin and connect an led and a resistor 1K ohms. if we dont add the resistor well blow it up
+
+we need to draw the board from scratch
+
+GROUP ASSIGNMENT: use voltmeter, oscilloscope....
+
+
+
+- all curents in and  out must add up to 0
+power = I^2R = IV
+- power equals heat ! you can fry things
+- also battery life
+
+conflicts can be avoided with 0ohm resistors
+
+ground core - surround everythinig with extra copper to isolate noise.
+
+
+
+building
+
+export to svg
+mods - server pcb svg
+remember to invert in the 2nd node the colors or we'll mill everything
+
+
+eagle is integrated into fusion
+eagle you can go forward and backwards in the design process:
+
+   hierarchical, parametric drawing
+   packages, footprints, libraries
+   schematic entry, component placement, (auto)routing, simulation, fabrication
+   
+
+
+gitlab fablab, i pub, electronics, there are libraries we can use.
+
+Digikey has embraced kicad and has libraries for the components
+there's one with the most common digikey components
+
+
+Falstad is a circuit simulator on the browser
+
+pcb.py - python script he wrote to 
+
+
+asinsmart power supply - you can graduate it. 
+oscilloscope analog signals vs time
+
+
+
+
