@@ -1,0 +1,94 @@
+ELECTROINC DESIGN THURSDAY
+----------------------------
+
+- resistor calculator on digikey website
+- tutoriasl on sparkfun
+- if there's no resistance, shortcircuits with infinite current
+- dimmming lights have a regulable resistor where you increase or decrease
+- a les torres d'ata tensio, hi ha un camp electric al voltant. les vaques quan s'hi acosten tenen una diferencia de potencial entre les potes de davant i les potes de darrera i es fregeixen
+- els treballadors fan servir la ma dreta pq si tenen una descarrega passi de ma dreta a peu dret sense passar pel cor
+
+- un condensador, si no te una resistencia entre les potes, es cremara pq descarregara la carrega directa.
+- un condensador fitra el soroll de les power supplies pq es va carregant i descarregant. normalment els posem entre els pols de la carrega. p.ex entre usb i el microcontrolador
+- els condensadors venen amb limits de voltatge que poden aguantar.
+
+- AC: oscillates between  positive and negative at 50/60hz
+- DC: Constant
+- AC is better for long distances
+- for long distances, theres high voltage and low current to minimize heat dissipations and energy loss
+
+-  Zener diodes are not voltage regulators.
+- voltage regulators LDOs are used to regulate for instance usbs 5v to 3.3
+- LEDs have a forward resistance but it's really small. thats why we need a resistor between power source and LED
+- it doesnt matter if the resistor is before or after the LED
+- in the power led resistor circuit, we have 2 voltages, the one that goes to the resistor and the one through the led
+- we have to check both voltage and amps on the led datasheet
+
+- the convention is that current goes from + to -
+
+- variable resistances for dimming lights work with an internal disk that regulates the distance electricity has to travel through the high resistance disk.
+
+- Oscillators / resonators - keep the signal sync. microcontrollers have 8 Mhz.
+- datasheet tells us how high it can go.
+- code needs to ALWAYS tell how fast it is going or there will be a mismatch
+with an external one you want to run faster or more accurate.
+- speed also depends on the voltage we pass because of intrenal electronics
+
+
+ASSIGNMENT: 
+our switch will need a resistor !
+
+
+- if we need to move a servo accurately, we will likely need an external resonator to provide more accuracy.
+
+
+- combinational vs sequential
+- combinational circuits dont know their state, just inputs and outputs
+- sequential has a state that knows how things are going and we can program it
+
+
+
+
+KICAD
+
+crear projecte
+carregar symbols
+carregar footprints
+schematic layout editor
+
+crear compomnents. R rota
+hover over the component R rota
+M moves
+E edits
+
+
+The Barduino schematic is on gitlab under electronics
+
+once finished the design, generate netlist
+
+then start routing. open routing and load the netlist
+
+next step would be the global design rules, track width and so on
+
+finally start creating routes
+
+if you can't create your board you can add 0 ohm resistors to bridge over
+
+if we need to change a component, we need to regenerate the netlist and so on. on the routing, we can do read current netlist and it will try to save what we had
+
+esp and other chips have a ground in the middle of the chips
+when there are antennas, we cant have copper underneath
+
+graphics lines at the end to create the outside of the board. we can do this afterwards, export the svg and editing it
+
+don't trust autoroute
+
+finally export to SVG - select the copper layers, leave everything by default.
+
+Open svg and export each layer with  a different png
+Set DPI to 1000
+Export only the area of your board.
+
+you can load the svg in mods as well.
+
+you can also export as gerbert and use gerbert to png [ython file on oscars github
