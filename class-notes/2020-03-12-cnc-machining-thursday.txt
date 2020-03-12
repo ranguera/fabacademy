@@ -1,0 +1,136 @@
+- mirar video a love letter to plywood
+- les lletres davant indiquen el tipus de fusta i la qualitat
+- never leave parts of a screw into the sacrificial board
+- assegurar-te que fas servir la punta phillips adequada
+- clavar recte perpendicular i amb laltra ma apretes des de darrera de la maquina
+- first sand pass, use a lower grain number
+- in natural wood, primer hem de foradar i despres posar el cargol, o es trencara la fusta
+- en plywood podem posar el cargol directament, a noser que posem pel lateral, llavors hem de foradar abans
+- 90% of ikea is made of 3axis cnc
+- ALWAYS prototype the design in the laser cutter
+- you can scale your design proportionally and it should be the same
+- sketchair - per dissenyar, simular i wafflejar la cadira
+- gear machines are sturdier, belt machines are faster but last less
+- 2 types of motors
+	- router: cheap, rotate really fast. not much torque
+	- spindle: brushless motor, quiteter, more powerful. works on torque.
+- collets: clamp your end mill. needs to be clean to wrap properly. make sure you're using the correct size. each collet is designed for a specific measure.
+- atc: automatic tool changers. cercle amb tots els mills i la maquina escull el que li duis automaticament.
+- always clean the collet and the collet holder.
+- when you cut, the chips that fly away are taking heat away from the mill. but depends on the material.
+- end mills ARE NOT drill bits.
+- types of end mils
+	- straight: easy, cheap, dont push up or down.
+	- up: most of them: all the motors rotate clockwise, so this cuts takes the material up. Fastest and most standard. Tricky to use: the material can completely lift up or move.
+	- down: the opposite. slowest ones. more forgiving when cutting plywood. NEVER make holes, bc the material can't go out.
+	- compression: up + down: compresses material to the center. expensive and rare.
+- it's always preferred to g odown on the material on a ramp. diagonally
+- cut length needs to be bigger than width of material.
+- try to choose the shortest possible mill
+- if you cut too slow it's not good bc there's not enough material to cool
+- too fast it;s getting too full
+- the bigger the better - so you speed up the process
+-in general, more flutes better and faster cuts. but less forgiving and easier to overheat or break.
+
+
+4 things to set up for the cutting files:
+	- spindle speed: motor you can control by software. between 18k to 24krpm. 
+	- feed rate: horizontal speed of cutting
+	- step down: Z steps to cut the material. we dont cut the material all at once. we do layers with the z step down. half of the end mill diameter.
+	- step over: movement in x/y. also half of diameter.
+	
+- equation: chip load [0.001 - 0.01] = feed rate / (rpm*num flutes) in inches per minutes.
+this equation only works if were using cut depth and step over = diameter/2
+google chip load material chart
+
+- formulas are for up cutter. if straight, reduce 10%, down reduce 20%.
+- TRUST YOUR EARS. Listen to the noise and make sure its right.
+	- too slow: high pitch noise - underfeeding the machine.
+	- too fast: overfeeding - mill breaks or low freq noise. like your mouth is full of food.
+	- perfect has a constant regular noise.
+- if we get noise change on corners, either we reduce rpms and speed.
+- climb is the connventional cutting, especially so for woods.
+- foam always in conventional, because it's compressible
+
+- cut for 1-2 minutes. stop the machine. touch the end mill - should be warm but not burning. then you have the right params
+- tabs: pieces of material that we dont cut to keep the material together, and that are manually cut afterwards.
+
+- safety glasses
+- hands on the back. dont touch the material with machine on
+- air cut before you cut. see if it goes through any of the screws. If something bad happens usually its within the first 1-3 minutes.
+-avoid small parts. they can fly away. or hold them properly.
+- pan the cutpaths like the laser cutter. incuts first, etc...
+-
+- when cuttnig plastics, really fast spindle.
+- HDPE: water pipes. cuts really well. 
+
+- when you're cutting wood, you dont want to get dust. you want to get chips. in case of metal, theyre thing and sharp.
+- dont touch metal chips with bare hands.
+- for instance, carbon fiber dust is too dangerous. you have to cut it inside water.
+
+- be careful with repuprosed material. it sometimes has hidden screws.
+
+- 
+- in cut cut inside aligned with line inside.
+- outcut- cut aligned with with outer part.
+- center cut, centered
+
+- joinery: cut one part to test it before cutting the whole thing, to get the right kerf
+- with the CNC, when cutting you're conpressing the aterial, so you do the opposite with the design kerf. you add something. you offset to the offside
+- when designing joints, you use t-bones because we cant cut a perfect square. alternative is a dog bone - 2 holes on each side
+
+- always measure the 4 corners of the wood its never the advertised thickness
+
+-
+- DESIGN
+- draw in millimiters.
+- Nest
+- multiple sheets in different drawings.
+- disable all fils and hatches
+- rhinoCAM - import object
+- bottom left you can right click and change units.
+- draw border cuts, to place screws insides. Different colors for differen styles of cut.
+- make sure we have a 3 axis machine selected
+- postprocessor - CNC_STEP_BCN
+- extension is .nc
+- doble click on stock.
+- click height and put the material on top. 
+- x,y,z = 0. mat dimensions as measured.
+- bottom left has options to preview the material and so on.
+- See where we wil punt scres and add a point.
+- Go to machining operations - 2 axis
+- rughing facing - flatenn.
+- pocketing remove material
+- engraving: on cut, on the line - select the two points that we set for the screws. Engraving is cutting
+- tool tab: edit create tool: flat and ball. we choose flat and name it and enter the values.
+- feeds and speed on the top right of the creation tool: by default minimum of the motor. we know the cut speed with the chip load equation. The other numbers we set them to 1/2 of it on the top ones, and same speed on the bottom part.
+- back to engraving menu: clearance plane: how much we're going up to the next piece. Always put our material height + 20, same for stock.
+- Cut parameters: how much we want to cut. we just want to cut a bit so that we know where we're putting the screw. we set it on tota cut depth.
+- rough depth cut: make sure it's not above step but max out
+- entry/exit: None and none
+- sorting: ike vector ordering on aser cuttern. - set to minimum distance sort.
+- finally click generate and we'll see the points.
+- 
+- 
+- we do the same with the rest of the shapes. select them and click, engrave. REcHECK SPEEDS.
+- cut parameters: OFfset. Ignore cut direction. leave climb for veneer plywood.
+- stepover: how much we cut on the side. We always want only to cut a limited % of the diameter - 40
+- total cut depth : 10 or whatever
+- rough cut remember 3
+- generate ans we should see the travel lines.
+- 
+- cut the outside: profiling not engraving. cut parameters climb.
+- total depth: 15.7 to go through all the material. half millimiter more. rough cut remember the closest to 3 or the value that we calculated.
+- entry/exit: important when cutting the outside. ALONG PATH. to avoid going through scews. Exit: None
+- sorting: minimum distance.
+- Number of bridges: always 4 9not sure what tab it ison )
+- We can rename the tasks to make it clearer. screws, pocketing, outcut
+- We can save one file for each of the tasks, and launch them in order,
+- efore that we click simulate and we will see. right click on top of setup.
+- save: right cilck and post.
+- There are step by step tutorials o the presentation.
+
+
+
+
+

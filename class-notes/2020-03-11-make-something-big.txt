@@ -1,0 +1,36 @@
+- opendesk.cc for ideas
+- shelter20.com
+- polycarbonate - reallky tough . hard to laser, easy to machine
+- garolite machines easilym great structura properties
+- drilling vs milling: milling cuts on bottom and sides.
+	- fewer flutes to rough out material, more to fine tune
+- uncoated mills not recommended
+- when flutes meet in the middle you can go down to center cuts
+- flute orientation: when milling we want to push chips out but doing so we create breaks on the surface
+q- trick: shallow down cut and then up cut
+- flat end mills can do smooth surfaees if w can move it slowly. ball end mills its easier
+- but ball end mills will create uneven floors at some points
+- chip load: how much each too bites in. respect the values
+
+- fixing material: drill control holes and put screws in that tie to the bottom layers. better than c clamps
+- mirar flextures apartat per construir coses corvades
+- mirar joinery per exemples de com ajuntar peces
+- reciprocal frame les coses s'aguanten entrellacades. ARC DE VOLTA
+- runout: mes enlla del kerf pq l'eina es mou una mica
+- climb gives the best finish. used for finishing
+- conventional: less force on the machine. used for roughing
+- trochoidal: moves the mill forward in circles
+- press fits wont work bc nils are round. we need to do t- boning ? create spheres on the edges
+- recomended: run your job in the air to make sure.
+- make a little prototype: laser cut or print.
+- shopbot VcarvePRO
+- Fusion: has nice cam capabilities - design + simulate
+- slicer: take 3d parts and turn it into 2d cuttable shapes
+- mods has programs for different files. Can also do finish cuts very smooth
+- we can produce the gcode directly as well]
+- always turn out the power before touching the machine'
+- 
+- group assignment: make a cube, make sure its straight
+come out with a table of speeds and feeds for out material.
+
+material 120x240 i 15mm fons. nomes 2d cutting
