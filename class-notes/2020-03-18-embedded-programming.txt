@@ -1,0 +1,40 @@
+EMBEDDED PROGRAMMING
+---------------------
+
+- microcontroller vs microprocessor
+- https://jaycarlson.net/microcontrollers
+- and some more cnc joints https://pin.it/3Z8kx2P
+- CNC joints: http://winterdienst.info/50-digital-wood-joints-by-jochen-gros/
+- Loading programs into the chips:
+	- For original AVRs: avrdude - sw that talks to hw to load into the processor
+	- arduino can be used as IsP !!
+	- newer avrs, more powerful, cheaper and use UPDI - pyupdi
+
+
+Arduino Micro as UDPI programmer:
+https://www.youtube.com/watch?v=AL9vK_xMt4E
+https://github.com/SpenceKonde/megaTinyCore
+https://github.com/SpenceKonde/jtag2updi/
+
+you can use raspberry or atmel to program ARMs
+
+Booloader: programs that program. you talk through usb and it programs. after you've loaded the bootloader, you don't need anything anymore.
+
+mirar el link de C programming a la classe.
+
+arduino core for esp32 - easiest way to install the toolchain - convert the c software into hardware iunstructions
+
+arduino has a serial monitor built in, and also through USB
+
+arduino: if you write directly to the port it's almost 100 times faster than using the arduino library. see attiny412 blink example on classe
+
+switch al esp32 es per load vs run.
+mirar lexemple de python. amb el cable ftdi
+
+pots instal.lar linterpret de python al esp32 (!)
+
+assignment - read datasheet. millor la attiny45
+
+https://git.hsrw.eu/ferdinand.meier/fablab/-/wikis/FabAc20_woche08
+
+https://www.youtube.com/watch?v=AL9vK_xMt4E
