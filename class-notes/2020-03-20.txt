@@ -1,0 +1,34 @@
+PLATFORMIO
+-------------
+
+
+- Afegir al Arduino IDE la llibreria del ESP32 week04 class, understanding the boards part has a list of what we need
+
+
+Includes in the Arduino IDE
+
+Copy paste this into Arduino > Preferences... > Additional Boards Manager URLs:
+
+https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+http://drazzy.com/package_drazzy.com_index.json
+https://www.mattairtech.com/software/arduino/beta/package_MattairTech_index.json
+https://dl.espressif.com/dl/package_esp32_index.json
+https://mcudude.github.io/MiniCore/package_MCUdude_MiniCore_index.json
+https://dl.espressif.com/dl/package_esp32_index.json
+
+platform.io
+
+written in python. can pip install
+IDE embedded in atom
+
+micropython is a python interpreter for microcontrollers
+circuitpython is the adafruit fork of micropython
+
+when outside the arduino IDE, we need to include the arduino.h library
+
+pio run to compile
+
+pio run -t upload to upload to the board
