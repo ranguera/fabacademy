@@ -1,0 +1,9 @@
+CLASS AFTER OUTPUT DEVICES
+--------------------------------
+
+Motors: Voltage is related to speed, current is related to torque
+mosfets are like relays but easier to use, take less space. but can handle less current.
+Common to use mosfets with heatsinks bc they heat up with continuous usage
+
+pololu drives: used to drive stepper motors.
+stepperonline

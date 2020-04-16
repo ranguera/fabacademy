@@ -1,0 +1,29 @@
+INPUT DEVICES
+---------------
+
+- A switch is a sensor in a sense.
+- motion, pyroelectric or doppler radar, measure changes on IR energy produced by movements. Not proximity
+- Radar sends microwave and if you';re moving with the reflection you can measure movement.
+- for proximity sensors, if the object is tilted, the reflection goes away and doesn't work
+- LIDAR: rotating laser and measure distance / change the modulation and measures modulation changes... different modfes
+
+- Magnetic fields: can sense the earth's field.
+- joysticks use an internal system of magnets. hall effects.
+
+- temperature: measured with thermal resistors - thermistors
+- processors have an internal temperature sensor that you can read
+
+leds can be used as low accuracy light sensors.
+you can measure the light that bounces off a surface as well
+
+- microfon. idea: guitarra i visualitzacio unity
+- mems microfon is good as the cellphone
+
+step response - can be many sensors.
+
+gps for ~$10
+
+pulse rate + blood oxygen
+
+asignment: dissenyar una board ! - step response es lo mes facil ?
+learn about adc, comparators...
